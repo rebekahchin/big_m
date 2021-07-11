@@ -176,16 +176,16 @@ for i=1:t_in
 end
 var_names{end+1}='Sol';
 row_names={'z','M'};
+for i=1:m
+    row_names{2+i}='';
+end
 for i=1:s_in % name regular constraints as s_i
         row_names{2+k(i)}=char("s_"+num2str(i));
 end
-for i=1:m0 % name the remaining constraints in A as t_i's
+for i=1:m % name the remaining constraints in A and Aeq as t_i's
     if isempty(row_names{2+i})
-        row_names{2+i}=char("t_"+num2str(i));
+            row_names{2+i}=char("t_"+num2str(i));
     end
-end
-for i=mu_in+1:t_in % name all the constraints in Aeq as t_i's
-    row_names{2+m0+k3(i-mu_in)}=char("t_"+num2str(i));
 end
 tab=array2table(T,'VariableNames',var_names,'RowNames',row_names);
 end
