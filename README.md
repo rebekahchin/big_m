@@ -13,13 +13,23 @@ where `f`, `x`, `b`, and `beq` are vectors, and `A` and `Aeq` are matrices.\
 ### Examples
 For the problem:\
 <img src="https://user-images.githubusercontent.com/83638650/125194681-ecb86500-e284-11eb-9197-5a87be0aa1b4.png" height="200">\
-set
+set:
 ```MATLAB
-A =  [1 2 3 4 5;
-      6 7 8 9 10;
+A =  [6 7 8 9 10;
       11 12 13 14 15;
-Aeq = [16 17 18 19 20;
-       21 22 23 24 25;
-       26 27 28 29 30];
-b = [
+      16 17 18 19 20];
+      [21 22 23 24 25;
+       26 27 28 29 30
+       31 32 33 34 35];
+b = [1 -1 -1];
+beq = [1 -1 -1];
+f = [1 2 3 4 5];
 ```
+Use `lpsort`:
+```
+tab = lpsort(A,Aeq,b,beq,f)
+```
+Output:
+```
+```
+
