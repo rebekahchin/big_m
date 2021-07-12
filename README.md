@@ -61,7 +61,7 @@ tab = lpsolve(tab,c,r)
 ### Description
 >Note: This function is dependent on the output of `lpsort`.
 ***
-`tab = lpsolve(tab,c,r)` performs row operations on the `tab` based on the pivot element. The pivot element is the (`r`,`c`)th element of `tab`, where `c` is the entering column, and `r` the leaving row, while `tab` is the output from `lpsort`, 
+`tab = lpsolve(tab,c,r)` performs row operations on the `tab` based on the pivot element. The pivot element is the (`r`,`c`)th element of `tab`, where `c` is the entering column, and `r` the leaving row, while `tab` is the output from `lpsort`.
 ***
 
 ### Example
