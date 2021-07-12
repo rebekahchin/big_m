@@ -182,9 +182,12 @@ end
 for i=1:s_in % name regular constraints as s_i
         row_names{2+k(i)}=char("s_"+num2str(i));
 end
-for i=1:m % name the remaining constraints in A and Aeq as t_i's
-    if isempty(row_names{2+i})
-            row_names{2+i}=char("t_"+num2str(i));
+for i=1:t_in % name the remaining constraints in A and Aeq as t_i's
+    for j=1:m
+        if isempty(row_names{2+j})
+            row_names{2+j}=char("t_"+num2str(i));
+            break
+        end
     end
 end
 tab=array2table(T,'VariableNames',var_names,'RowNames',row_names);
