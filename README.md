@@ -67,7 +67,7 @@ tab = lpsolve(tab,c,r)
 ### Example
 From [the earlier example](https://github.com/rebekahchin/big_m#example), we see that the entering column, `c`, is `x_4`, while the leaving row, `r`, is `t_6`, based on the simplex algorithm.\
 \
-Set:
+Having used `lpsort`, use `lpsolve`:
 ```MATLAB
 tab = lpsolve(tab,4,8)
 ```
