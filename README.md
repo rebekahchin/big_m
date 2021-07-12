@@ -8,7 +8,7 @@ tab = lpsort(A,Aeq,b,beq,f)
 Linear programming calculator that produces a tableau based on the problem specified by:\
 \
 <img src="https://user-images.githubusercontent.com/83638650/125194032-0d32f000-e282-11eb-9890-7b507c4c9060.png" height="100">\
-where `f`, `x`, `b`, and `beq` are vectors, and `A` and `Aeq` are matrices.\
+where `f`, `x`, `b`, and `beq` are vectors, and `A` and `Aeq` are matrices.
 ***
 `tab = lpsort(A,Aeq,b,beq,f)` produces a tableau that would be solved by `lpsolve` based on the the given constraints `A`, `b`, `Aeq`, and `beq`. 
 ***
